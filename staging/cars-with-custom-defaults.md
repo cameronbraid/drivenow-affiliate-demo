@@ -1,6 +1,6 @@
 ---
 title: Cars with custom defaults
-layout: demo
+layout: staging
 ---
 <div
     data-drivenow-widget='SearchWidget'

@@ -1,5 +1,5 @@
 ---
-title: TabbedSearchWidget
-layout: demo
+title: Tabbed Search Widget
+layout: staging
 ---
 <div data-drivenow-widget='TabbedSearchWidget'></div>

@@ -1,12 +1,12 @@
 ---
 title: DriveNow Affiliate widget demo site
 ---
-
-<ul>
-    {% for page in site.pages %}
-	{% if page.layout == 'demo' %}
-      	<li><a href="{{ page.url | relative_url  }}">{{ page.title }}</a></li>
-	  {% endif %}
-    {% endfor %}
-</ul>
-
+{% assign groups = site.pages | group_by: 'layout' | sort: 'title' %}
+{% for group in groups %}
+## {{ group.name }}
+		{% for page in group.items %}
+			{% if page.layout == 'dev' or page.layout == 'staging' %}
+* <a href="{{ page.url | relative_url  }}">{{ page.title }}</a>
+			{% endif %}
+		{% endfor %}
+{% endfor %}

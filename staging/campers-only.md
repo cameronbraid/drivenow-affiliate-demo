@@ -1,5 +1,5 @@
 ---
 title: Campers Only
-layout: demo
+layout: staging
 ---
 <div data-drivenow-widget='SearchWidget' data-vehicle-category='campervan-hire'></div>

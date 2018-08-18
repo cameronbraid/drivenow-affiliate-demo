@@ -1,6 +1,6 @@
 ---
 title: Campers with custom defaults
-layout: demo
+layout: dev
 ---
 <div
     data-drivenow-widget='SearchWidget'
