@@ -5,7 +5,7 @@ title: DriveNow Affiliate widget demo site
 {% for group in groups %}
 ## {{ group.name }}
 		{% for page in group.items %}
-			{% if page.layout == 'dev' or page.layout == 'staging' %}
+			{% if page.layout == 'dev' or page.layout == 'staging' or page.layout == 'production' %}
 * <a href="{{ page.url | relative_url  }}">{{ page.title }}</a>
 			{% endif %}
 		{% endfor %}
